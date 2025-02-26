@@ -108,3 +108,11 @@ def delete_article(request, slug):
     context = {"blog": blog, "del":delete_article, "blogs": blogs}
     return render(request, "core/profile.html", context)
     
+
+def test(request):
+    context = {}
+    return render(request, "blogapp/test.html", context)
+
+def test2(request):
+    context = {}
+    return render(request, "blogapp/test2.html", context)
